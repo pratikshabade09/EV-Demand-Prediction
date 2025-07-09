@@ -7,7 +7,7 @@ Welcome to the EV Charging Demand Predictor — an interactive web app that esti
 ## 📌 Project Overview
 
 🚗 With the rise of electric vehicles, it's crucial to forecast infrastructure needs.  
-This project leverages **Machine Learning (Linear Regression)** to predict EV charging station demand based on:
+This project leverages **Machine Learning (xgboost)** to predict EV charging station demand based on:
 
 - Population Density (per sq.km)
 - EV Vehicle Density (per sq.km)
@@ -20,7 +20,7 @@ The model was trained using real-world data from U.S. alternative fuel station l
 
 - Python
 - Pandas, NumPy
-- Scikit-learn (Linear Regression)
+- XGBOOST
 - Matplotlib & Seaborn
 - Joblib (for saving model)
 - Streamlit
