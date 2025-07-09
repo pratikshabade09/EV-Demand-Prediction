@@ -83,7 +83,7 @@ elif page == "🔮 Prediction":
 
     if st.button("🔍 Predict Now"):
         pred = model.predict([[pop_density, ev_density]])[0]
-        demand_level = "🔴 High Demand - Rapid Infrastructure Needed!" if pred > 9 else ("🟡 Medium Demand - Growing Interest" if pred > 8 else "🟢 Low Demand - Emerging Area")
+        demand_level = "🔴 High Demand - Rapid Infrastructure Needed!" if pred > 8 else ("🟡 Medium Demand - Growing Interest" if pred > 5 else "🟢 Low Demand - Emerging Area")
         st.markdown(f"<h3 style='color: teal;'>📍 Estimated Station Count: {round(pred)}</h3>", unsafe_allow_html=True)
         st.markdown(f"<h4 style='color: gray;'>{demand_level}</h4>", unsafe_allow_html=True)
 
